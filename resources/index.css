@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Stark;
+    src: url(Stark.OTF);
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    font-family: Source Sans Pro, Arial, sans-serif;
+    color: #001030;
+    line-height: 1.5rem;
+}
+
+main {
+    background-image: url(background.svg)
+}
+
+nav {
+    display: flex;
+    height: 3.5rem;
+    position: sticky;
+    z-index: 100;
+}
+
+nav img {
+    justify-content: flex-start;
+    align-items: center;
+    height: 2rem;
+}
+
+nav a {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h1 {
+    font-family: Stark, Source Sans Pro, Arial, sans-serif;
+
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.33rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+a {
+    border: bottom 3px #90E96A;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    border-bottom: 3px solid #D2F8C2;
+}
+
+button {
+    background-color: #90E96A;
+    line-height: 50px;
+}
+
+button:hover, button:active, button:focus {
+    background-color: #D2F8C2;
+    line-height: 50px;
+}
+
+#alert {
+    border: 10px solid rgba(144, 233, 106, 0.8);
+}
+
+footer {
+    background-color: #90E96A;
+    display: flex;
+    height: 3.5rem;
+}
