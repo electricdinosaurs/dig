@@ -2,72 +2,116 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <style>        
+            @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+        </style>
         <link href="resources/index.css" type="text/css" rel="stylesheet">
         <title>Dig Student Garden at UCLA</title>
     </head>
     <body>
+        <div id="alert">
+            NOTICE: Due to COVID-19 restrictions, the garden will not be open until further notice. Please feel free to follow our <a href="#footer">social media</a> and check out our <a href="#events">calendar</a> to join in on our virtual programming! Check back soon for updates on the garden. 
+        </div>
         <header>
-            <nav>
-                <img src="resources/logo_color.svg" alt=""/>
+            <img src="resources/menu.png" usemap="#image-map">
+            <map name="image-map">
+                <area alt="About" title="About" href="#about" coords="97,294,39" shape="circle">
+                <area  alt="Location" title="Location" href="#location" coords="156,410,38" shape="circle">
+                <area  alt="Events" title="Events" href="#events" coords="301,461,38" shape="circle">
+                <area  alt="Learn" title="Learn" href="#learn" coords="446,411,36" shape="circle">
+                <area  alt="Join" title="Join" href="#join" coords="507,294,37" shape="circle">
+            </map>
+        </header>
+        <nav>
+            <img src="resources/logo_color.svg" alt=""/>
+            <div>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#events">Events</a>
                 <a href="#learn">Learn</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <main>
-            <section id="home">
-                <div id="alert">
-                    NOTICE: Due to COVID-19 restrictions, the garden will not be open until further notice. Please feel free to follow our <a href="#footer">social media</a> and check out our <a href="#events">calendar</a> to join in on our virtual programming! Check back soon for updates on the garden. 
-                </div>
-                <a href="#home"><img src="" alt=""/></a>
-                <a href="#about"><img src="" alt=""/></a>
-                <a href="#events"><img src="" alt=""/></a>
-                <a href="#learn"><img src="" alt=""/></a>
-                <a href="#contact"><img src="" alt=""/></a>
-            </section>
-            <img />
-            <section id="about">
-                <h2>About</h2>
-                <p>
-                    DIG creates a space for the community to come together and learn about the process of growing food and our food systems through hands-on learning. Our goal is to foster the relationship between nature, humans, and fresh, healthy food. ​
-                </p>
-                <p>
-                    During non-COVID operations, ​"Dig-ins" occur every Sunday at 12PM. Find us at the garden on the Mesa Lawn in Sunset Canyon Recreation Center (across from obstacle course).
-                </p>
+                <a href="#join">Join</a>
+            </div>
+        </nav>
+        <div id="container">
+            <main>
+                <img />
+                <section id="about">
+                    <h2>About</h2>
+                    <p>
+                        Dig creates a space for the community to come together and learn about the process of growing food and our food systems through hands-on learning. Our goal is to foster the relationship between nature, humans, and fresh, healthy food. ​All levels of experience and interest are welcome.
+                    </p>
+                    <p>
+                        During non-COVID operations, ​"Dig-ins" occur every Sunday at 12PM. ​Dig-ins are work days that offer students the opportunity to learn hands on in the garden through instructions and tips from fellow members as well as occasional workshops from outside community leaders. 
+                    </p>
+                    <p>
+                        These workdays give students the chance to relax in-between studying and enjoy the beautiful climate of Los Angeles. 
+                    </p>  
+                </section>
+                <section id="location">
+                    <h2>Location</h2>
+                    <p>
+                        Find us at the garden on the Mesa Lawn in Sunset Canyon Recreation Center (across from obstacle course).
+                    </p>
+                </section>
                 <!--Google maps embed/image-->
-            </section>
-            <img />
-            <section id="events">
-                <h2>Events</h2>
-                <p>
-                    Join us on Sundays from 12-2pm PST for ​workshops on everything from container gardening to flower pressing to food justice! Check out the calendar below for details.
-                </p>
-                <iframe src="https://calendar.google.com/calendar/embed?src=c1h3bhhha91reii6tuqm9eko2c%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </section>
-            <img />
-            <section id="learn">
-                <h2>Learn</h2>
-                <p>
-                    Live on the other side of the world and/or slept through your favorite workshop? No worries! We keep recordings and materials from past workshops in our <a href="">archive</a>.
-                </p>
-            </section>
-            <img />
-            <section id="contact">
-                <form>
-                    <!--MailChimp newsletter-->
-                </form>
-                <form>
-                    <!--some sort of feedback mechanism, maybe link to Google form-->
-                </form>
-            </section>
-        </main>
+                <img />
+                <section id="events">
+                    <h2>Events</h2>
+                    <p>
+                        Join us on Sundays from 12-2pm PST for ​workshops on everything from container gardening to flower pressing to food justice! Check out the calendar below for details.
+                    </p>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=c1h3bhhha91reii6tuqm9eko2c%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" height="400" frameborder="0" scrolling="no"></iframe>
+                        
+                </section>
+                <img />
+                <section id="learn">
+                    <h2>Learn</h2>
+                    <p>
+                        Live on the other side of the world and/or slept through your favorite workshop? No worries! We keep recordings and materials from past workshops in our <a href="">archive</a>.
+                    </p>
+                </section>
+                <img />
+                <section id="join">
+                    <h2>Get Involved</h2>
+                    <p>
+
+                    </p>
+                    <form>
+                        <!--MailChimp newsletter-->
+                    </form>
+                    <p>
+                        <span class="bold">Note: watering is not needed at this time.</span>
+                        Want to help us out? Read our <a href="https://docs.google.com/document/d/1DRHuXVddMvqdUa45d_MNeGSj5nNWyCiF4eUl-8D5yhc/edit?usp=sharing">watering guide</a>, then <a href="https://docs.google.com/spreadsheets/d/1DaW0UUTZD3ze9juCiYZcJGFli4EPRRHYbJQYgEUkdvk/edit?usp=sharing">sign up</a> for a watering shift! We greatly appreciate your help.
+                    </p>
+                    <form>
+                        <!--some sort of feedback mechanism, maybe link to Google form-->
+                    </form>
+                </section>
+                <section id="leaders">
+                    <h2>Meet the Leaders</h2>
+                </section>
+            </main>
+        </div>
         <footer>
-            <a href=""><img src="" alt="Facebook"/></a>
-            <a href=""><img src="" alt="Instagram"/></a>
+            <div class="left">
+                <h2>Sponsors</h2>
+                <a href="">
+                    <img src="" alt=""/>
+                </a>
+                <a href="">
+                    <img src="" alt=""/>
+                </a>
+            </div>
+            <div class="right">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/digucla">
+                    <img src="" alt="Facebook"/>
+                </a>
+                <a href="https://www.instagram.com/digucla/">
+                    <img src="" alt="Instagram"/>
+                </a>
+            </div>
         </footer>
     </body>
 </html>

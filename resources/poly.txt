@@ -1,0 +1,7 @@
+<map name="image-map">
+                <area target="_blank" alt="About" title="About" href="#about" coords="61.5,207.5,91,206.5,109,222.5,116,237.5,106.5,252,91,264.5,62,264.5,31,236.5" shape="poly">
+                <area target="_blank" alt="Location" title="Location" href="#location" coords="152.5,300,160,319,154,342,130.5,358,91,361.5,92,326,106.5,302,131.5,292" shape="poly">
+                <area target="_blank" alt="Events" title="Events" href="#events" coords="242,326.5,263,339,272,363.5,266.5,385,241.5,414,216,386,210,362.5,220,338" shape="poly">
+                <area target="_blank" alt="Learn" title="Learn" href="#learn" coords="339,292.5,354.5,292,373.5,302,387,323.5,388,360.5,353,357,336.5,350,323.5,332,322,314.5,325.5,301" shape="poly">
+                <area target="_blank" alt="Join" title="Join" href="#join" coords="365.5,237,378.5,214.5,400,205.5,419.5,207,453,235.5,423,262,397,266.5,377,254.5" shape="poly">
+            </map>
