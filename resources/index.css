@@ -3,17 +3,20 @@
     src: url(Stark.OTF);
 }
 
+/* note that we still need a cross browser solution for smooth scrolling */
 html {
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     font-family: "Source Sans Pro", Arial, sans-serif;
     color: #001030;
 }
 
+/* make the background seamless */
 #container {
     width: 100%;
     background-size: 100%;
@@ -42,6 +45,10 @@ main {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+main img {
+    width: 100%;
 }
 
 nav {
@@ -100,11 +107,11 @@ a {
     text-decoration: none;
 }
 
-main a {
+#alert a, main a {
     border-bottom: 3px solid #90E96A;
 }
 
-main a:hover, main a:active, main a:focus {
+#alert a:hover, #alert a:active, #alert a:focus, main a:hover, main a:active, main a:focus {
     border-bottom: 3px solid #D2F8C2;
 }
 
@@ -113,12 +120,17 @@ section {
 }
 
 button {
-    line-height: 50px;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 3.5rem;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     background-color: #90E96A;
+    border: none;
+    font-weight: 600;
 }
 
 button:hover, button:active, button:focus {
-    line-height: 50px;
     background-color: #D2F8C2;
 }
 
@@ -139,15 +151,48 @@ iframe, form {
     background-color: #90E96A;
 }
 
-#alert {
-    width: 80%;
-    position: relative;
-    top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+/* try flex-grow and transparent background on the dropdowns */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dropdown img {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.dropdown div {
+    width: 32%;
+}
+
+.dropdown details {
+    font-size: 0.8rem;
+    background-color: #D2F8C2;
+}
+
+.dropdown summary {
+    padding: 1rem; 
+    font-family: Stark;
+    font-size: 1rem;
+    text-align: center;
     background-color: white;
-    border: 10px solid rgba(144, 233, 106, 0.8);
+}
+
+.dropdown p, ul {
+    margin: 0;
+    padding: 1rem;
+}
+
+#alert {
+    position: absolute;
+    top: 0;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    line-height: 1.25rem;
+    background-color: white;
+    outline: 10px solid rgba(144, 233, 106, 0.8);
 }
 
 footer {
@@ -163,7 +208,7 @@ footer img {
     align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     header {
         display: none;
     }

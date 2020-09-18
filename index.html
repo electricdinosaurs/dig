@@ -10,11 +10,12 @@
         <title>Dig Student Garden at UCLA</title>
     </head>
     <body>
-        <div id="alert">
-            NOTICE: Due to COVID-19 restrictions, the garden will not be open until further notice. Please feel free to follow our <a href="#footer">social media</a> and check out our <a href="#events">calendar</a> to join in on our virtual programming! Check back soon for updates on the garden. 
-        </div>
+        
         <header>
-            <img src="resources/menu.png" usemap="#image-map">
+            <div id="alert">
+                NOTICE: Due to COVID-19 restrictions, the garden will not be open until further notice. Please feel free to follow our <a href="#footer">social media</a> and check out our <a href="#events">calendar</a> to join in on our virtual programming! Check back soon for updates on the garden. 
+            </div>
+            <img id="menu" src="resources/menu.png" usemap="#image-map">
             <map name="image-map">
                 <area alt="About" title="About" href="#about" coords="97,294,39" shape="circle">
                 <area  alt="Location" title="Location" href="#location" coords="156,410,38" shape="circle">
@@ -26,11 +27,13 @@
         <nav>
             <img src="resources/logo_color.svg" alt=""/>
             <div>
-                <a href="#home">Home</a>
+                <a href="#menu">Home</a>
                 <a href="#about">About</a>
+                <a href="#location">Location</a>
                 <a href="#events">Events</a>
                 <a href="#learn">Learn</a>
                 <a href="#join">Join</a>
+                <a href="#team">Team</a>
             </div>
         </nav>
         <div id="container">
@@ -42,12 +45,10 @@
                         Dig creates a space for the community to come together and learn about the process of growing food and our food systems through hands-on learning. Our goal is to foster the relationship between nature, humans, and fresh, healthy food. ​All levels of experience and interest are welcome.
                     </p>
                     <p>
-                        During non-COVID operations, ​"Dig-ins" occur every Sunday at 12PM. ​Dig-ins are work days that offer students the opportunity to learn hands on in the garden through instructions and tips from fellow members as well as occasional workshops from outside community leaders. 
+                        The garden located in Sunset Canyon Recreation Center was first established by UCLA's largest environmental student organization, E3: Ecology, Economy, Equity, in 2006. As the garden became more demanding of its own infrastructure and leadership, Dig at UCLA was formed in 2012 as a distinct organization. Now Dig stands as a unique student group on campus that focuses on using peer learning and the garden space to educate one another about food, activism, health, and sustainability.
                     </p>
-                    <p>
-                        These workdays give students the chance to relax in-between studying and enjoy the beautiful climate of Los Angeles. 
-                    </p>  
                 </section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_79J7Es07WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <section id="location">
                     <h2>Location</h2>
                     <p>
@@ -55,41 +56,119 @@
                     </p>
                 </section>
                 <!--Google maps embed/image-->
-                <img />
+                <img alt="Directions to Dig Garden: enter from the gate on De Neve Drive, halfway between Sunset Canyon Recreation Center parking lot and Sunset Amphitheater gate"/>
                 <section id="events">
                     <h2>Events</h2>
                     <p>
                         Join us on Sundays from 12-2pm PST for ​workshops on everything from container gardening to flower pressing to food justice! Check out the calendar below for details.
                     </p>
                     <iframe src="https://calendar.google.com/calendar/embed?src=c1h3bhhha91reii6tuqm9eko2c%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" height="400" frameborder="0" scrolling="no"></iframe>
-                        
                 </section>
-                <img />
                 <section id="learn">
                     <h2>Learn</h2>
                     <p>
-                        Live on the other side of the world and/or slept through your favorite workshop? No worries! We keep recordings and materials from past workshops in our <a href="">archive</a>.
+                        Live on the other side of the world and/or slept through your favorite workshop? No worries! We keep recordings and materials from past workshops in our archive.
                     </p>
+                    <button>Visit the archive</button>
                 </section>
-                <img />
+                <img src="resources/garden1.jpg" alt="View of the garden, including tool shed, 8 garden beds, and a compost bin (not pictured)"/>
                 <section id="join">
                     <h2>Get Involved</h2>
                     <p>
-
+                        There's a lot of ways to get started with us! Click each banner to learn more.
+                    </p>
+                    <div class="dropdown">
+                        <div>
+                            <img src="resources/shovel.png" alt=""/>
+                            <details>
+                                <summary>Dig-ins</summary>
+                                <p>
+                                    <span class="bold">Note: Dig-ins are not occurring at this time.</span>
+                                </p>
+                                <p>
+                                    "Dig-ins" occur every Sunday from 12-2PM. Members can learn hands-on together in the garden. Occasional workshops are hosted by outside community leaders.
+                                </p>
+                                <p>
+                                    Take the opportunity to relax in between studying or working and enjoy the beautiful climate of Los Angeles! No commitment or attendance minimum is required.
+                                </p>
+                            </details>
+                        </div>
+                        <div>
+                            <img src="resources/watering.png" alt=""/>
+                            <details>
+                                <summary>Watering</summary>
+                                <p>
+                                    <span class="bold">Note: watering is not needed at this time.</span>
+                                </p>
+                                <p>
+                                    Want to help us out? Read our <a href="https://docs.google.com/document/d/1DRHuXVddMvqdUa45d_MNeGSj5nNWyCiF4eUl-8D5yhc/edit?usp=sharing">watering guide</a>, then <a href="https://docs.google.com/spreadsheets/d/1DaW0UUTZD3ze9juCiYZcJGFli4EPRRHYbJQYgEUkdvk/edit?usp=sharing">sign up</a> for a watering shift! We greatly appreciate your help.
+                                </p>
+                            </details>
+                        </div>
+                        <div>
+                            <img src="resources/recycle.png" alt=""/>
+                            <details>
+                                <summary>Composting</summary>
+                                <p>
+                                    <span class="bold">Note: compost is not being accepted at this time.</span>
+                                </p>
+                                <p>
+                                    Compost keeps our plants healthy and keeps waste out of landfills. Join one of our famous compost workshops to do it yourself, or drop off food scraps any time to the black compost bin at the end of our garden, behind the L-shaped bed.
+                                </p>
+                                <p>
+                                    For guidance on what should and should not be composted, <span class="bold">please read</span> the summary from our 
+                                    <a href="">compost workshop.</a>  
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                    <p>
+                        Interested? Join our newsletter by filling out the form! 
                     </p>
                     <form>
                         <!--MailChimp newsletter-->
                     </form>
                     <p>
-                        <span class="bold">Note: watering is not needed at this time.</span>
-                        Want to help us out? Read our <a href="https://docs.google.com/document/d/1DRHuXVddMvqdUa45d_MNeGSj5nNWyCiF4eUl-8D5yhc/edit?usp=sharing">watering guide</a>, then <a href="https://docs.google.com/spreadsheets/d/1DaW0UUTZD3ze9juCiYZcJGFli4EPRRHYbJQYgEUkdvk/edit?usp=sharing">sign up</a> for a watering shift! We greatly appreciate your help.
+                        Is your club interested in collaborating on a workshop with us? Do you have general questions about Dig? Contact us via the form below.
                     </p>
                     <form>
                         <!--some sort of feedback mechanism, maybe link to Google form-->
                     </form>
                 </section>
-                <section id="leaders">
+                <section id="team">
                     <h2>Meet the Leaders</h2>
+                    <div class="dropdown">
+                        <div>
+                            <img src="" alt=""/>
+                            <details>
+                                <summary>Leader Name</summary>
+                                <ul>
+                                    <li>Major: Environmental Science</li>
+                                    <li>Year: 3</li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div>
+                            <img src="" alt=""/>
+                            <details>
+                                <summary>Leader Name</summary>
+                                <ul>
+                                    <li>Major: Environmental Science</li>
+                                    <li>Year: 3</li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div>
+                            <img src="" alt=""/>
+                            <details>
+                                <summary>Leader Name</summary>
+                                <ul>
+                                    <li>Major: Environmental Science</li>
+                                    <li>Year: 3</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
